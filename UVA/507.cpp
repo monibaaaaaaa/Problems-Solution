@@ -12,8 +12,10 @@ using namespace std ;
 #define MAX (20000+5)
 #define pii pair< int , int >
 #define ll long long
+
 int q, n, res, idx;
 int val[ MAX ], dp[ MAX ], start[ MAX ];
+
 int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0), cout.tie(0);
@@ -40,9 +42,9 @@ int main(){
                 idx = i;
             }
         }
-        if( res> 0 ){
+        if( res ){
             cout << "The nicest part of route " << cas <<" is between stops "<< start[ idx ]  <<" and "<<idx + 1 <<endl;
-        }else cout << "Route "<<cas<<" has no nice parts" << endl;
+        }else cout << "Route " << cas << " has no nice parts" << endl;
     }
 
 
